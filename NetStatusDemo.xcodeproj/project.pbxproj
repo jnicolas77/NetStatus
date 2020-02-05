@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DECC87F23EB7D8D00C20F3F /* NetStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DECC87B23EB7D6E00C20F3F /* NetStatus.framework */; };
+		2DECC88023EB7D8D00C20F3F /* NetStatus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DECC87B23EB7D6E00C20F3F /* NetStatus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C061E93422B7A8D600E83360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061E93322B7A8D600E83360 /* AppDelegate.swift */; };
 		C061E93622B7A8D600E83360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061E93522B7A8D600E83360 /* ViewController.swift */; };
 		C061E93922B7A8D600E83360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C061E93722B7A8D600E83360 /* Main.storyboard */; };
@@ -14,10 +16,41 @@
 		C061E93E22B7A8D900E83360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C061E93C22B7A8D900E83360 /* LaunchScreen.storyboard */; };
 		C061E94822B7A91100E83360 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C061E94622B7A91100E83360 /* InfoCell.xib */; };
 		C061E94922B7A91100E83360 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061E94722B7A91100E83360 /* InfoCell.swift */; };
-		C061E94B22B7A9FD00E83360 /* NetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061E94A22B7A9FD00E83360 /* NetStatus.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2DECC87A23EB7D6E00C20F3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DECC87523EB7D6D00C20F3F /* NetStatus.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DECC85923EB7D0A00C20F3F;
+			remoteInfo = NetStatus;
+		};
+		2DECC87C23EB7D6E00C20F3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DECC87523EB7D6D00C20F3F /* NetStatus.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2DECC86223EB7D0A00C20F3F;
+			remoteInfo = NetStatusTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DECC88123EB7D8D00C20F3F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DECC88023EB7D8D00C20F3F /* NetStatus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2DECC87523EB7D6D00C20F3F /* NetStatus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetStatus.xcodeproj; path = NetStatus/NetStatus/NetStatus.xcodeproj; sourceTree = "<group>"; };
 		C061E93022B7A8D600E83360 /* NetStatusDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetStatusDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C061E93322B7A8D600E83360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C061E93522B7A8D600E83360 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +60,6 @@
 		C061E93F22B7A8D900E83360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C061E94622B7A91100E83360 /* InfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
 		C061E94722B7A91100E83360 /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
-		C061E94A22B7A9FD00E83360 /* NetStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +67,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DECC87F23EB7D8D00C20F3F /* NetStatus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DECC87623EB7D6D00C20F3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DECC87B23EB7D6E00C20F3F /* NetStatus.framework */,
+				2DECC87D23EB7D6E00C20F3F /* NetStatusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DECC87E23EB7D8D00C20F3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C061E92722B7A8D600E83360 = {
 			isa = PBXGroup;
 			children = (
+				2DECC87523EB7D6D00C20F3F /* NetStatus.xcodeproj */,
 				C061E93222B7A8D600E83360 /* NetStatusDemo */,
 				C061E93122B7A8D600E83360 /* Products */,
+				2DECC87E23EB7D8D00C20F3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +114,6 @@
 				C061E94522B7A8E600E83360 /* Custom Cell */,
 				C061E93322B7A8D600E83360 /* AppDelegate.swift */,
 				C061E93522B7A8D600E83360 /* ViewController.swift */,
-				C061E94A22B7A9FD00E83360 /* NetStatus.swift */,
 				C061E93722B7A8D600E83360 /* Main.storyboard */,
 				C061E93A22B7A8D900E83360 /* Assets.xcassets */,
 				C061E93C22B7A8D900E83360 /* LaunchScreen.storyboard */,
@@ -91,6 +141,7 @@
 				C061E92C22B7A8D600E83360 /* Sources */,
 				C061E92D22B7A8D600E83360 /* Frameworks */,
 				C061E92E22B7A8D600E83360 /* Resources */,
+				2DECC88123EB7D8D00C20F3F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,12 +178,35 @@
 			mainGroup = C061E92722B7A8D600E83360;
 			productRefGroup = C061E93122B7A8D600E83360 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2DECC87623EB7D6D00C20F3F /* Products */;
+					ProjectRef = 2DECC87523EB7D6D00C20F3F /* NetStatus.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C061E92F22B7A8D600E83360 /* NetStatusDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2DECC87B23EB7D6E00C20F3F /* NetStatus.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NetStatus.framework;
+			remoteRef = 2DECC87A23EB7D6E00C20F3F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DECC87D23EB7D6E00C20F3F /* NetStatusTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NetStatusTests.xctest;
+			remoteRef = 2DECC87C23EB7D6E00C20F3F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C061E92E22B7A8D600E83360 /* Resources */ = {
@@ -154,7 +228,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C061E93622B7A8D600E83360 /* ViewController.swift in Sources */,
-				C061E94B22B7A9FD00E83360 /* NetStatus.swift in Sources */,
 				C061E93422B7A8D600E83360 /* AppDelegate.swift in Sources */,
 				C061E94922B7A91100E83360 /* InfoCell.swift in Sources */,
 			);
